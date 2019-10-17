@@ -1,0 +1,23 @@
+package tpjava1;
+import  java.util.Scanner;
+public class exercice9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a, b, c,e , som;
+		
+	System.out.println("saisir un nbr entre 0 et 1000");
+	Scanner d = new Scanner(System.in);
+	a = d.nextInt();
+	while(a<0 && a>1000) {
+		System.out.println("saisir un nbr entre 0 et 1000");
+		a = d.nextInt();
+		
+	}
+	b = a / 1000;
+	c = b / 100;
+	e = c /10 ;
+	som = b + c + e;
+	System.out.println("la somme des digits de " + a +" est" + som );
+}
+}
